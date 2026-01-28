@@ -1,12 +1,13 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import ChaiOrders from './ChaiOrders'
+import Quotemennu from "./quotemennu.jsx"
 
 function App() {
 
   const [quote, setQuote]=useState("Old is gold ")
 
 
-   useState(()=>{
+   useEffect(()=>{
        fetch("https://api.freeapi.app/api/v1/public/quotes/quote/random")
        .then((res)=>res.json())
        .then((mahiti)=>setQuote(mahiti.data.content
@@ -20,6 +21,7 @@ function App() {
       <h6>Yash here </h6>
       <h3>{quote}</h3>
       <ChaiOrders/>
+      <Quotemennu/>
     </div>
   )
 }
