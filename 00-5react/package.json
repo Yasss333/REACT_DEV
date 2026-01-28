@@ -6,7 +6,8 @@
 
   "scripts": {
     "dev": "vite",
-    "format": "prettier .  --write"
+    "format": "prettier .  --write",
+    "build":"vite build"
   },
   "keywords": [],
   "author": "",

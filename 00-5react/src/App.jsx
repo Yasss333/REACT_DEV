@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import ChaiOrders from './ChaiOrders'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <h1>Hey </h1>
       <h6>Yash here </h6>
       <h3>{quote}</h3>
+      <ChaiOrders/>
     </div>
   )
 }
