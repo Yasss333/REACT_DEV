@@ -1,0 +1,16 @@
+# Node
+node_modules/
+
+# Next.js
+.next/
+out/
+
+# Vite / React
+dist/
+
+# Env files
+.env
+.env.local
+
+# OS
+.DS_Store
